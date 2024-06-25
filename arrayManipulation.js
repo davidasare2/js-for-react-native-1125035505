@@ -1,3 +1,4 @@
+import { createUserProfiles } from "./userinfo.js";
 /* TASK ONE */
 function processArray(ArrayOfNumbers = []) {
     const newArray = [];
@@ -45,3 +46,7 @@ export function formatArrayStrings(ArrayofStrings = [], ArrayOfNumbers = []) {
 const originalArray = ["bob", "nice", "Hen", "Ben", "Dave"];
 const result2 = formatArrayStrings([...originalArray], result);  // Use a copy of originalArray
 console.log(result2);  // Output: ["BOB", "nice", "hen"]
+
+/* TASK THREE */
+const result3 = createUserProfiles(originalArray, result2);
+console.log(result3);
